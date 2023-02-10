@@ -208,7 +208,7 @@ class ProductController extends Controller
             Product::find($id)->update([
                 'product_name' => $request->product_name,
                 'product_price' => $request->product_price,
-                'product_product' => $request->product_stock,
+                'product_stock' => $request->product_stock,
 
                 'updated_at' => Carbon::now(),
             ]);
